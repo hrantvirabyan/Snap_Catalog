@@ -2,38 +2,69 @@
 <html>
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <title>LA TV Shows | Home</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles">
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="Catalog.css" />
+    <script type="text/javascript" src="catalog.js"></script>
 </head>
 
+
 <body>
-    <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container">
-        
-    </div>
-    <div class="card" style="display: none;">
-        <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+    <div class="top-right-controls">
+        <div class="search-container">
+            <input type="search" placeholder="Search...">
+        </div>
+
+            <button class="explore-button bn28" id="homeButton">Home</button>
+            <button class="explore-button bn29" id="sourceButton">Sources</button>
+
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
+
+
+    <div class="container">
+        <div class="item">
+            <div class="dropdown">
+                <img src="CatalogImages/Nivera.png" alt="Image 1">
+                <div class="dropdown-content">
+                    <p class="desc">Details for Image 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dropdown">
+                <img src="CatalogImages/Nivera.png" alt="Image 2">
+                <div class="dropdown-content">
+                    <p class="desc">Details for Image 2 <br> Details for Image 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dropdown">
+                <img src="CatalogImages/Nivera.png" alt="Image 3">
+                <div class="dropdown-content">
+                    <p class="desc">Details for Image 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="dropdown">
+                <img src="CatalogImages/Nivera.png" alt="Image 4">
+                <div class="dropdown-content">
+                    <p class="desc">Details for Image 4</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more items as needed -->
     </div>
+
+    <script src="catalog.js"></script>
+    
 </body>
 
 </html>

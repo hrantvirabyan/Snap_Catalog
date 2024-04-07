@@ -1,0 +1,210 @@
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("BackgroundImages/Carmeet.png");
+    background-size: cover;
+}
+
+
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: 8em;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+.top-right-controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.search-container {
+    margin-right: 60px; /* Space between search container and buttons */
+    margin-top: 26.5px;
+}
+
+.search-container input[type="search"] {
+    padding: 0.5rem;
+}
+
+
+
+
+.explore-button {
+    position: relative;
+    font-family: Arial, sans-serif;
+    width: 101px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 5px;
+    left: -33px;
+    margin-top: 30px;
+    height: 35px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .explore-button:hover {
+    background-position: 100% 0;
+    -moz-transitio: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .explore-button:focus {
+    outline: none;
+  }
+  
+  .explore-button.bn28 {
+    background-image: linear-gradient(
+      to right,
+      #001336,
+      #181818,
+      #181818,
+      #001336
+    );
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .explore-button.bn29 {
+    background-image: linear-gradient(
+      to right,
+      #001336,
+      #181818,
+      #181818,
+      #001336
+    );
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+.container {
+    display: flex;
+    justify-content: center; /* This will center the items horizontally in the container */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+
+.item {
+    padding-top: 100px;
+    position: relative;
+    width: calc(25% - 40px); /* 4 items per row with padding */
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    max-height: 0; /* Initially no height */
+    overflow: hidden; /* Prevent content from showing when not expanded */
+    transition: max-height 0.5s ease; /* Smooth transition for dropdown effect */
+}
+
+.desc {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 15px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown on hover */
+    max-height: 200px;
+}
+
+.item img {
+    width: 100%; /* Adjust width as needed */
+    height: auto;
+    display: block;
+}
+
+.item p {
+    text-align: center; /* Center the text below the image */
+}
+
+
+
+
