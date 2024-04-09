@@ -1,3 +1,4 @@
+//background images
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.getElementById('bg-image-container');
     var images = [
@@ -6,9 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'BackgroundImages/bmw.png',
         'BackgroundImages/aston.png',
         'BackgroundImages/Koenigsegg.png',
-
-        
-        // ... add more as needed
     ];
     var currentIndex = 0;
     
@@ -17,10 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-    // Initially set the background image.
     changeBackgroundImage();
 
-    // Change the image every 3 seconds.
+    // change the image every 3 seconds.
     setInterval(changeBackgroundImage, 3000);
 });
 

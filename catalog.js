@@ -1,6 +1,7 @@
+//array of objects to store the data for the cars
 const cars = [
-    { name: 'Nevera', make: 'Rimac', model: 'Nevera', year: 2024, price: '$2,200,000', horsepower: '1813hp', weight: '5100 lb', imageUrl: 'CatalogImages/RimacNivera.jpg', details: 'Details for Nivera' },
-    { name: 'CarModelB', make: 'Audi', model: 'RS e-tron GT', year: 2024, price: '$147,100', horsepower: '637hp', weight: '5139 lbs', imageUrl: 'CatalogImages/2024 Audi RS e-tron GT.png', details: 'Details for CarModelB' },
+    { name: 'Nevera', make: 'Rimac', model: 'Nevera', year: 2024, price: '$2,200,000', horsepower: '1813hp', weight: '5100 lb', imageUrl: 'CatalogImages/RimacNivera.jpg', details: 'Details' },
+    { name: 'CarModelB', make: 'Audi', model: 'RS e-tron GT', year: 2024, price: '$147,100', horsepower: '637hp', weight: '5139 lbs', imageUrl: 'CatalogImages/2024 Audi RS e-tron GT.png', details: 'Details' },
     { name: '2024 Chevrolet Corvette E-Ray', make: 'Chevrolet', model: 'Corvette E-Ray', year: 2024, price: '$104,900', horsepower: '655hp', weight: '3856 lbs', imageUrl: 'CatalogImages/Corvette.png', details: 'Details' },
     { name: '2024 Ferrari 296 GTB ', make: 'Ferrari', model: '296 GTB', year: 2024, price: '$342,205', horsepower: '818hp', weight: '3241 lbs', imageUrl: 'CatalogImages/ferrari 296 gtb.png', details: 'Details' },
     { name: 'Ferrari 812 Competizione', make: 'Ferrari', model: '812 Competizione', year: 2024, price: '$598,513', horsepower: '818hp', weight: '3510 lbs', imageUrl: 'CatalogImages/812.png', details: 'Details' },
@@ -14,7 +15,7 @@ const cars = [
     { name: '2024 Mercedes-AMG One', make: 'Mercedes', model: 'AMG One', year: 2024, price: '$5,450,000', horsepower: '1049hp', weight: '3737 lbs', imageUrl: 'CatalogImages/amgone.jpg', details: 'Details' },
     { name: '2024 Pininfarina Battista', make: 'Pininfarina', model: 'Battista', year: 2024, price: '$2,200,000', horsepower: '1877hp', weight: '2,548 lb', imageUrl: 'CatalogImages/battista.png', details: 'Details' },
     { name: '2024 Aston Martin Valkyrie', make: 'Aston Martin', model: 'Valkyrie', year: 2024, price: '$3,500,000', horsepower: '1139hp', weight: '2271 lbs', imageUrl: 'CatalogImages/aston.png', details: 'Details' },
-    // Add more cars as needed
+    // this list could be extended to show more cars
 ];
 
 //add each car to the catalog page from the list above
@@ -22,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.container');
     const searchInput = document.getElementById('search-input');
     const sortOption = document.getElementById('sort-option');
-
+    //remove symbols and values in order to use the sort and search
     function parseValue(value) {
         return Number(value.replace(/[^0-9.-]+/g, ""));
     }
 
     function displayCars(carsToDisplay) {
-        container.innerHTML = ''; // Clear the container before showing filtered results
+        container.innerHTML = ''; // make the container empty before loading in the correct cars
         carsToDisplay.forEach(car => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'item';
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(itemDiv);
         });
     }
-
+    //function to sort the cars either by horsepower or price. low to high and vise versa
     function sortCars(sortBy) {
         cars.sort((a, b) => {
             let valA, valB;
@@ -81,11 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         displayCars(cars);
     }
-
+    //used to sort by price and hp
     sortOption.addEventListener('change', () => {
         sortCars(sortOption.value);
     });
-
+    //search the car list. these could include the make model year and name
     searchInput.addEventListener('input', () => {
         const searchText = searchInput.value.toLowerCase();
         const filteredCars = cars.filter(car =>
@@ -98,9 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
         displayCars(filteredCars);
     });
 
-    displayCars(cars); // Initial display of cars
+    displayCars(cars); //show the cars
 
-    // Navigation button events
+    // buttons on the top right for navigation
     document.getElementById("homeButton").onclick = function () {
         location.href = "index.html";
     };
