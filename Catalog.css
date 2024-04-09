@@ -177,22 +177,24 @@ body {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    max-height: 0; /* Initially no height */
-    overflow: hidden; /* Prevent content from showing when not expanded */
-    transition: max-height 0.5s ease; /* Smooth transition for dropdown effect */
+    visibility: hidden; /* Hide dropdown initially */
+    opacity: 0; /* Make dropdown transparent */
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear; /* Apply transition */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
 }
 
 .desc {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: italic;
-    padding: 15px;
     text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show the dropdown on hover */
-    max-height: 200px;
+  visibility: visible; /* Show the dropdown on hover */
+  opacity: 1; /* Make dropdown opaque */
+  transition-delay: 0s; /* Apply transition delay */
 }
 
 .item img {
