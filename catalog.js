@@ -9,7 +9,7 @@ const cars = [
     { name: 'Koenigsegg Regera', make: 'Koenigsegg', model: 'Regera', year: 2024, price: '$1,890,000', horsepower: '1489hp', weight: '3505 lbs', imageUrl: 'CatalogImages/regera.png', details: 'Details' },
     { name: '2024 Lamborghini Revuelto', make: 'Lamborghini', model: 'Revuelto', year: 2024, price: '$604,363', horsepower: '1001hp', weight: ' 3907 lbs', imageUrl: 'CatalogImages/Revuelto.jpg', details: 'Details' },
     { name: '2024 Lotus Evija', make: 'Lotus', model: 'Evija', year: 2024, price: '$2,300,000', horsepower: '2011hp', weight: '4160 lbs', imageUrl: 'CatalogImages/evija.png', details: 'Details' },
-   { name: 'Lucid Air Sapphire', make: 'Lucid', model: 'Air Sapphire', year: 2024, price: '$249,000', horsepower: '1200hp', weight: '5290 lbs', imageUrl: 'CatalogImages/lucid.png', details: 'Details' },
+    { name: 'Lucid Air Sapphire', make: 'Lucid', model: 'Air Sapphire', year: 2024, price: '$249,000', horsepower: '1200hp', weight: '5290 lbs', imageUrl: 'CatalogImages/lucid.png', details: 'Details' },
     { name: '2024 Mercedes-AMG GT 63 S E Performance', make: 'Mercedes', model: 'AMG GT 63 S E Performance', year: 2024, price: '$136,050', horsepower: '831hp', weight: '5082 lbs', imageUrl: 'CatalogImages/benz.png', details: 'Details' },
     { name: '2024 Mercedes-AMG One', make: 'Mercedes', model: 'AMG One', year: 2024, price: '$5,450,000', horsepower: '1049hp', weight: '3737 lbs', imageUrl: 'CatalogImages/amgone.jpg', details: 'Details' },
     { name: '2024 Pininfarina Battista', make: 'Pininfarina', model: 'Battista', year: 2024, price: '$2,200,000', horsepower: '1877hp', weight: '2,548 lb', imageUrl: 'CatalogImages/battista.png', details: 'Details' },
