@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed; /* dont make the background dynamic */
   background-position: center; 
+  padding-bottom: 300px;
 }
 
 
@@ -173,15 +174,23 @@ body {
 }
 
 .item {
-    padding-top: 100px;
+  margin-top: 130px;
     position: relative;
     width: calc(25% - 40px); /* 4 items per row with padding */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 20000;
+}
+
+.item:hover {
+  transform: scale(1.05); /* Zooms in the item by 10% when hovered */
 }
 
 .dropdown {
     display: inline-block;
     position: relative;
     width: 100%;
+    z-index: 200010;
 }
 
 .dropdown-content {
@@ -204,12 +213,14 @@ body {
     font-weight: 400;
     font-style: italic;
     text-align: center;
+    z-index: 200001;
 }
 
 .dropdown:hover .dropdown-content {
   visibility: visible; /* Show the dropdown on hover */
   opacity: 1; /* Make dropdown opaque */
   transition-delay: 0s; /* Apply transition delay */
+  z-index: 200001;
 }
 
 .item img {
