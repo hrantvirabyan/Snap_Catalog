@@ -94,3 +94,25 @@ body, html {
     box-shadow: 0 0px 15px rgba(255, 0, 0, 0.4);
   }
 /* Add additional styles as needed */
+
+.source-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(168, 168, 168, 0.7); 
+  border: 1px solid #000; 
+  padding: 20px;
+  width: 700px;
+  margin: 20px;
+  z-index: 20;
+  text-align: center;
+}
+
+a {
+  text-decoration: none; 
+}
+
+li {
+  list-style-type: none; 
+}

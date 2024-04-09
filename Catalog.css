@@ -184,6 +184,7 @@ body {
 
 .item:hover {
   transform: scale(1.05); /* Zooms in the item by 10% when hovered */
+  z-index: 20000;
 }
 
 .dropdown {
