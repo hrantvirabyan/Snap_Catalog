@@ -1,4 +1,4 @@
-//background images
+//background images...wait on the explore page it fades through the backgrounds!
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.getElementById('bg-image-container');
     var images = [
