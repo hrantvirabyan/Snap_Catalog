@@ -1,41 +1,23 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
-    <link rel="icon" href="BackgroundImages\LOGO.png" type="image/png">
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
-    <link rel="stylesheet" href="Catalog.css" />
-    <script type="text/javascript" src="catalog.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="LandingPage.css">
+    <script type="text/javascript" src="scripts.js"></script>
 </head>
-
-
 <body>
-    <div class="top-right-controls">
-        <div class="search-container">
-            <input type="search" id="search-input" placeholder="Search...">
-        </div>
-
-            <button class="explore-button bn28" id="homeButton">Home</button>
-            <button class="explore-button bn29" id="sourceButton">Sources</button>
-
-        </div>
+    <div class="baseBackground">
+        <div id="bg-image-container" class="contact"></div>
+    </div>
+    <div class="bg-image-container" id="bg-image-container">
+        <!-- Background images will be loaded here by JavaScript -->
     </div>
 
-
-    <div class="container">
-       
-        <!-- Contains all the cars and information-->
+    <div class="centered-content">
+        <button class="explore-button bn28" id="exploreButton">Explore</button>
     </div>
-
-    <script src="catalog.js"></script>
-    
+    <script src="scripts.js"></script>
 </body>
-
 </html>

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById("exploreButton").onclick = function () {
-    location.href = "index.html";
+    location.href = "catalog.html";
     console.log("Clicked")
 };
 
