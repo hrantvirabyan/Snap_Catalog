@@ -21,6 +21,7 @@ body, html {
   position: absolute;
   z-index: 2;
   transition: background-image 0.5s; /* transition for the background change */
+  background-position: center;
 }
 
 

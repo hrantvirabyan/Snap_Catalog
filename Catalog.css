@@ -77,7 +77,7 @@ body {
     color: white;
 }
 .top-right-controls {
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
     display: flex;
@@ -215,6 +215,7 @@ body {
     font-style: italic;
     text-align: center;
     z-index: 200001;
+    font-size: 1.7vh;
 }
 /* show the dropdown on hover */
 .dropdown:hover .dropdown-content {
